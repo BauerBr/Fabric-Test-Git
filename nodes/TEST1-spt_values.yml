@@ -1,0 +1,122 @@
+fileVersion: 1
+id: d1d268e7-9675-4375-b722-a6028f6de977
+name: spt_values
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: TEST1
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e1522f3-3a07-4ef2-a4dd-53cc24a6b226
+          stepCounter: d1d268e7-9675-4375-b722-a6028f6de977
+        config: {}
+        dataType: nvarchar
+        defaultValue: ""
+        description: ""
+        name: name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 339c699f-a150-4f56-a077-7128deb08126
+          stepCounter: d1d268e7-9675-4375-b722-a6028f6de977
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: number
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7664ac01-503c-4bb5-bb31-1c7675c468c7
+          stepCounter: d1d268e7-9675-4375-b722-a6028f6de977
+        config: {}
+        dataType: nchar
+        defaultValue: ""
+        description: ""
+        name: type
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc3ce904-4868-48da-9940-8b026956bd3e
+          stepCounter: d1d268e7-9675-4375-b722-a6028f6de977
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: low
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32c2090a-df48-4ed5-86a4-a1e9c4087289
+          stepCounter: d1d268e7-9675-4375-b722-a6028f6de977
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: high
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23f2bac3-0928-4d5c-b13f-8d1a4bdc9cd1
+          stepCounter: d1d268e7-9675-4375-b722-a6028f6de977
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: status
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+    join:
+      joinCondition: FROM {{ ref('TEST1', 'spt_values') }}
+  name: spt_values
+  schema: ""
+  sqlType: Source
+  table: spt_values
+  type: sourceInput
+  version: 1
+type: Node

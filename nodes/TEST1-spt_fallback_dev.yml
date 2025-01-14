@@ -1,0 +1,190 @@
+fileVersion: 1
+id: 9f3f9b63-c51b-409a-ade4-db8f21af61ca
+name: spt_fallback_dev
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: TEST1
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cd02f797-fb21-44af-84af-2300aadb86cf
+          stepCounter: 9f3f9b63-c51b-409a-ade4-db8f21af61ca
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: xserver_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d5ab856b-5a70-4549-9235-0c1948cf320a
+          stepCounter: 9f3f9b63-c51b-409a-ade4-db8f21af61ca
+        config: {}
+        dataType: datetime
+        defaultValue: ""
+        description: ""
+        name: xdttm_ins
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 079662dd-45fd-4d90-8b69-088ca5d3b2dc
+          stepCounter: 9f3f9b63-c51b-409a-ade4-db8f21af61ca
+        config: {}
+        dataType: datetime
+        defaultValue: ""
+        description: ""
+        name: xdttm_last_ins_upd
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38224bc5-bbe0-472c-a0e1-305915fe8436
+          stepCounter: 9f3f9b63-c51b-409a-ade4-db8f21af61ca
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: xfallback_low
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d1958ed-de89-4b63-848d-9fdf1343f678
+          stepCounter: 9f3f9b63-c51b-409a-ade4-db8f21af61ca
+        config: {}
+        dataType: char
+        defaultValue: ""
+        description: ""
+        name: xfallback_drive
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 97e11d33-7634-40d7-a7d1-c933b3b3cc59
+          stepCounter: 9f3f9b63-c51b-409a-ade4-db8f21af61ca
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: low
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fb3d80e7-d449-49f0-802b-d8a0427f9f58
+          stepCounter: 9f3f9b63-c51b-409a-ade4-db8f21af61ca
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: high
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8c4cde56-48da-4849-ad41-306baeaf9ed1
+          stepCounter: 9f3f9b63-c51b-409a-ade4-db8f21af61ca
+        config: {}
+        dataType: smallint
+        defaultValue: ""
+        description: ""
+        name: status
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 798e11e7-8d29-4903-9eb6-f4ed94d17fae
+          stepCounter: 9f3f9b63-c51b-409a-ade4-db8f21af61ca
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ae2b6c0b-d822-41ce-a350-c6051947d652
+          stepCounter: 9f3f9b63-c51b-409a-ade4-db8f21af61ca
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: phyname
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+    join:
+      joinCondition: FROM {{ ref('TEST1', 'spt_fallback_dev') }}
+  name: spt_fallback_dev
+  schema: ""
+  sqlType: Source
+  table: spt_fallback_dev
+  type: sourceInput
+  version: 1
+type: Node

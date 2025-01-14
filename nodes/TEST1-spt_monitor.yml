@@ -1,0 +1,207 @@
+fileVersion: 1
+id: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+name: spt_monitor
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: TEST1
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c3ee520a-2e7b-4af7-9fb5-ab23c66dd84c
+          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+        config: {}
+        dataType: datetime
+        defaultValue: ""
+        description: ""
+        name: lastrun
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9b5ba7bc-bf67-47fa-bb34-899f5d301100
+          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: cpu_busy
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 91bfb62e-a24a-4e06-94d0-44f9bd6d4a6e
+          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: io_busy
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b007136-d1a3-43ac-9261-31ab3606c4b7
+          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: idle
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9beabcbb-90ed-4c96-a26e-fa2f253a2bf1
+          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: pack_received
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5284e67-05b6-4007-a4ac-4efde140b6d0
+          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: pack_sent
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa6f0df3-b742-4b09-88da-101e969b31ff
+          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: connections
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e1ce1105-9b28-41f3-8f45-918c7dfdee07
+          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: pack_errors
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 323d9cb5-eb8b-4315-ae3f-068d77ad46ad
+          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: total_read
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 21b0bd0c-2f96-4c93-9127-965763513846
+          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: total_write
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8dd49d6a-931a-4747-a312-08e458cf5515
+          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: total_errors
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+    join:
+      joinCondition: FROM {{ ref('TEST1', 'spt_monitor') }}
+  name: spt_monitor
+  schema: ""
+  sqlType: Source
+  table: spt_monitor
+  type: sourceInput
+  version: 1
+type: Node

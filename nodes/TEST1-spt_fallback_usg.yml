@@ -1,0 +1,173 @@
+fileVersion: 1
+id: 181f2183-098a-4ff5-a683-0383074bce59
+name: spt_fallback_usg
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: TEST1
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0650b3f1-4847-4621-8aed-943fe9949177
+          stepCounter: 181f2183-098a-4ff5-a683-0383074bce59
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: xserver_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dc649ffa-8fa5-4e6d-b150-3bc0fd242983
+          stepCounter: 181f2183-098a-4ff5-a683-0383074bce59
+        config: {}
+        dataType: datetime
+        defaultValue: ""
+        description: ""
+        name: xdttm_ins
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9dbc5b77-6917-49e5-abd2-bbacc58e9219
+          stepCounter: 181f2183-098a-4ff5-a683-0383074bce59
+        config: {}
+        dataType: datetime
+        defaultValue: ""
+        description: ""
+        name: xdttm_last_ins_upd
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 383725d3-c9b4-4d71-a15e-e1e2bc1f11b2
+          stepCounter: 181f2183-098a-4ff5-a683-0383074bce59
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: xfallback_vstart
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff73670b-bca2-493a-8933-fac955c9649f
+          stepCounter: 181f2183-098a-4ff5-a683-0383074bce59
+        config: {}
+        dataType: smallint
+        defaultValue: ""
+        description: ""
+        name: dbid
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ffe31d08-122f-46b6-bf79-190add763287
+          stepCounter: 181f2183-098a-4ff5-a683-0383074bce59
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: segmap
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8eb6909e-92ca-4260-9bfb-708f3e13b7ce
+          stepCounter: 181f2183-098a-4ff5-a683-0383074bce59
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: lstart
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0790c72c-f72f-4419-9e5c-f269da20b562
+          stepCounter: 181f2183-098a-4ff5-a683-0383074bce59
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: sizepg
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 383d17dc-c283-40ef-a3dd-b895eabb66f7
+          stepCounter: 181f2183-098a-4ff5-a683-0383074bce59
+        config: {}
+        dataType: int
+        defaultValue: ""
+        description: ""
+        name: vstart
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+    join:
+      joinCondition: FROM {{ ref('TEST1', 'spt_fallback_usg') }}
+  name: spt_fallback_usg
+  schema: ""
+  sqlType: Source
+  table: spt_fallback_usg
+  type: sourceInput
+  version: 1
+type: Node
