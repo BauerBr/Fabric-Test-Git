@@ -6,7 +6,7 @@ metadata:
   error: null
   nodeMetadataSpec: |
     capitalized: Persistent Stage
-    short: pstg
+    short: PSTG
     plural: Persistent Stages
     tagColor: '#29B2DB'
         

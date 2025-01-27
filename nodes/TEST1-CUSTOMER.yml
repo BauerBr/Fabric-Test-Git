@@ -1,0 +1,156 @@
+fileVersion: 1
+id: dd57ca76-f782-495a-888c-f2852a0f4905
+name: CUSTOMER
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: TEST1
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08b6b18d-a08d-47ee-95ec-907cb597d1b6
+          stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
+        config: {}
+        dataType: decimal
+        defaultValue: ""
+        description: ""
+        name: C_CUSTKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 480e0f1a-a64f-456f-b7c0-fc6975650baa
+          stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: C_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7d95beab-d998-40c3-85cd-7b2af9e974e6
+          stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: C_ADDRESS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5dde43c-cec3-4b77-b21f-650d8bea9c1f
+          stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
+        config: {}
+        dataType: decimal
+        defaultValue: ""
+        description: ""
+        name: C_NATIONKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 67933b75-663b-4f08-8cf3-286411746595
+          stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: C_PHONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b0a3cbc3-abf1-42dc-9440-ed03a2408250
+          stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
+        config: {}
+        dataType: decimal
+        defaultValue: ""
+        description: ""
+        name: C_ACCTBAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f155a9d2-2a99-429a-9f3f-29fc42aa5cf6
+          stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: C_MKTSEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e26c05c3-1e5f-4e40-aacc-e6a683502fb1
+          stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: C_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+    join:
+      joinCondition: FROM {{ ref('TEST1', 'CUSTOMER') }}
+  name: CUSTOMER
+  schema: ""
+  sqlType: Source
+  table: CUSTOMER
+  type: sourceInput
+  version: 1
+type: Node

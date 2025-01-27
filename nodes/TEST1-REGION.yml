@@ -1,0 +1,71 @@
+fileVersion: 1
+id: 2588cb22-e72b-405a-a250-ec93c79e4792
+name: REGION
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: TEST1
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: beb52ae7-2d06-4981-8b1a-dadf28f67efa
+          stepCounter: 2588cb22-e72b-405a-a250-ec93c79e4792
+        config: {}
+        dataType: decimal
+        defaultValue: ""
+        description: ""
+        name: R_REGIONKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3f0dbb86-7ce1-4e86-9fab-d1c8254c42b6
+          stepCounter: 2588cb22-e72b-405a-a250-ec93c79e4792
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: R_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fafe0b9d-2c19-46b5-b1f3-3a98dc42b65d
+          stepCounter: 2588cb22-e72b-405a-a250-ec93c79e4792
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: R_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+    join:
+      joinCondition: FROM {{ ref('TEST1', 'REGION') }}
+  name: REGION
+  schema: ""
+  sqlType: Source
+  table: REGION
+  type: sourceInput
+  version: 1
+type: Node

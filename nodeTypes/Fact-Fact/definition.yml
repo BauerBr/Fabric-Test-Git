@@ -7,7 +7,7 @@ metadata:
   nodeMetadataSpec: |
     capitalized: Fact
     plural: Facts
-    short: fct
+    short: FCT
     tagColor: '#D9A438'
 
     config:

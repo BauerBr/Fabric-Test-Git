@@ -3,9 +3,9 @@ id: "55"
 mappingDefinitions:
   TEST:
     database: COALESCE_DEV
-    schema: kyle_test
+    schema: bryan_test
   TEST1:
     database: COALESCE_DEV
-    schema: guest
+    schema: mmccune
 name: New Environment
 type: Environment

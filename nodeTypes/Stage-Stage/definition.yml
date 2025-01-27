@@ -7,7 +7,7 @@ metadata:
   nodeMetadataSpec: |
 
     capitalized: Stage
-    short: stg
+    short: STG
     plural: Stages
     tagColor: '#2EB67D'
 

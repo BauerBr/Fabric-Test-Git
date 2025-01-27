@@ -1,0 +1,139 @@
+fileVersion: 1
+id: c8ca4576-b52d-4e92-b7db-d3c8aafc66d0
+name: SUPPLIER
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: TEST1
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 988ad05f-76e6-4bd0-8291-9205e6f281a6
+          stepCounter: c8ca4576-b52d-4e92-b7db-d3c8aafc66d0
+        config: {}
+        dataType: decimal
+        defaultValue: ""
+        description: ""
+        name: S_SUPPKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7b8e398-16f2-4e83-adcb-3b78125e4077
+          stepCounter: c8ca4576-b52d-4e92-b7db-d3c8aafc66d0
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: S_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d67f8d9c-5a06-4c6e-8ddc-5a7c6a7261ff
+          stepCounter: c8ca4576-b52d-4e92-b7db-d3c8aafc66d0
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: S_ADDRESS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef2e77da-eaa2-426c-a0e8-207afeff9843
+          stepCounter: c8ca4576-b52d-4e92-b7db-d3c8aafc66d0
+        config: {}
+        dataType: decimal
+        defaultValue: ""
+        description: ""
+        name: S_NATIONKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 02b1fed8-6408-44df-b732-a5632bd44cb2
+          stepCounter: c8ca4576-b52d-4e92-b7db-d3c8aafc66d0
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: S_PHONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c23f0fdd-d298-4fac-9f4d-bd2b31e70a2e
+          stepCounter: c8ca4576-b52d-4e92-b7db-d3c8aafc66d0
+        config: {}
+        dataType: decimal
+        defaultValue: ""
+        description: ""
+        name: S_ACCTBAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dc9f0d19-aa5c-4475-a74a-3f7f0482dc60
+          stepCounter: c8ca4576-b52d-4e92-b7db-d3c8aafc66d0
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: S_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+    join:
+      joinCondition: FROM {{ ref('TEST1', 'SUPPLIER') }}
+  name: SUPPLIER
+  schema: ""
+  sqlType: Source
+  table: SUPPLIER
+  type: sourceInput
+  version: 1
+type: Node

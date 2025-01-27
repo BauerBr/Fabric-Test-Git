@@ -1,0 +1,88 @@
+fileVersion: 1
+id: 91e9846d-03a9-41a3-9640-7b14ae0b6435
+name: NATION
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: TEST1
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6684dd16-8985-4314-850d-c415dc7fcaf2
+          stepCounter: 91e9846d-03a9-41a3-9640-7b14ae0b6435
+        config: {}
+        dataType: decimal
+        defaultValue: ""
+        description: ""
+        name: N_NATIONKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4185109a-b9d1-4f14-b484-0b46807743ba
+          stepCounter: 91e9846d-03a9-41a3-9640-7b14ae0b6435
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: N_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3cb19d1-e3aa-48c9-9f77-783ccf7348bc
+          stepCounter: 91e9846d-03a9-41a3-9640-7b14ae0b6435
+        config: {}
+        dataType: decimal
+        defaultValue: ""
+        description: ""
+        name: N_REGIONKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8d9d2167-c678-43ec-acf0-02ebcfa56d51
+          stepCounter: 91e9846d-03a9-41a3-9640-7b14ae0b6435
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: N_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+    join:
+      joinCondition: FROM {{ ref('TEST1', 'NATION') }}
+  name: NATION
+  schema: ""
+  sqlType: Source
+  table: NATION
+  type: sourceInput
+  version: 1
+type: Node
