@@ -3,7 +3,7 @@ id: "55"
 mappingDefinitions:
   TEST:
     database: COALESCE_DEV
-    schema: bryan_test
+    schema: kyle_test
   TEST1:
     database: COALESCE_DEV
     schema: mmccune
