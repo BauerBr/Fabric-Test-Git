@@ -121,6 +121,26 @@ operation:
                 stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
             transform: UPPER("CUSTOMER"."C_PHONE")
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a7a0e85d-a395-43fd-a983-eb786c778508
+          stepCounter: eda63b8a-bcd6-44c7-941e-315658eabca0
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Blah
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b0a3cbc3-abf1-42dc-9440-ed03a2408250
+                stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
+            transform: ROUND("CUSTOMER"."C_ACCTBAL")
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
