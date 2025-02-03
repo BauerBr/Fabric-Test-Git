@@ -24,7 +24,7 @@ operation:
         config: {}
         dataType: decimal
         description: ""
-        name: C_CUSTKEY
+        name: C_CUSTKEY_rename
         nullable: true
         sourceColumnReferences:
           - columnReferences:
