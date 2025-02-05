@@ -112,7 +112,7 @@ operation:
         dataType: varchar
         defaultValue: ""
         description: ""
-        name: C_TEST
+        name: C_TEST_1
         nullable: true
         sourceColumnReferences:
           - columnReferences:
