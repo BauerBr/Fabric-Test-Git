@@ -112,7 +112,6 @@ operation:
         dataType: varchar
         defaultValue: ""
         description: ""
-        keyColumnType: None
         name: C_TEST
         nullable: true
         sourceColumnReferences:
@@ -120,7 +119,6 @@ operation:
               - columnCounter: 67933b75-663b-4f08-8cf3-286411746595
                 stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
             transform: UPPER("CUSTOMER"."C_PHONE")
-        systemColumnType: None
       - acceptedValues:
           strictMatch: true
           values: []
@@ -132,15 +130,31 @@ operation:
         dataType: varchar
         defaultValue: ""
         description: ""
-        keyColumnType: None
-        name: Blah
+        name: Blah_
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: b0a3cbc3-abf1-42dc-9440-ed03a2408250
                 stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
             transform: ROUND("CUSTOMER"."C_ACCTBAL")
-        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a3f14d2a-5ed3-4158-9e64-f75ccdc52fe4
+          stepCounter: eda63b8a-bcd6-44c7-941e-315658eabca0
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        name: hi
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
