@@ -103,20 +103,6 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: bd4b58d5-0267-47c9-9eee-59c49b492898
-          stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
-        config: {}
-        dataType: VARCHAR(8000)
-        description: ""
-        name: O_CLERK
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: f614e0da-3cdf-4d09-94bb-68b32c748b3d
-                stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: c0541f66-c171-49c0-b835-1f07772ce136
           stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
         config: {}
