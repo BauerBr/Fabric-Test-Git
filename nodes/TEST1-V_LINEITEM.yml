@@ -21,9 +21,9 @@ operation:
           columnCounter: e3cc6eff-24c2-4176-9da2-4feef7b2bb34
           stepCounter: 1273d522-84f0-4188-aee7-869d98e2e77c
         config: {}
-        dataType: DECIMAL(38,6)
+        dataType: DECIMAL(32,5)
         description: ""
-        name: L_ORDERKEY
+        name: L_ORDERKEY_Rename
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -240,6 +240,24 @@ operation:
               - columnCounter: e3ca47c8-78ac-4fdc-9c14-00753eb93c4d
                 stepCounter: 6bc922f3-de4b-4ed6-ba67-dd02d2d58fc8
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 414eb420-5ba0-4f1e-a831-e61d67d4c8e4
+          stepCounter: 1273d522-84f0-4188-aee7-869d98e2e77c
+        config: {}
+        dataType: VARCHAR(8000)
+        defaultValue: ""
+        description: ""
+        name: L_NEW_COLUMN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e3ca47c8-78ac-4fdc-9c14-00753eb93c4d
+                stepCounter: 6bc922f3-de4b-4ed6-ba67-dd02d2d58fc8
+            transform: UPPER([LINEITEM].[L_COMMENT])
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
