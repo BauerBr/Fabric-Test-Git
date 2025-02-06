@@ -122,7 +122,7 @@ operation:
         config: {}
         dataType: DECIMAL(38,6)
         description: ""
-        name: O_SHIPPRIORITY
+        name: O_SHIPPRIORITY_RENAME
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -134,18 +134,18 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: ed850cff-9b4c-4f23-ba5f-aa7bf3a1c262
+          columnCounter: be52e3ee-fe80-4556-83d6-d9703a6cdde0
           stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
         config: {}
-        dataType: VARCHAR(4000)
+        dataType: VARCHAR(3000)
         defaultValue: ""
         description: ""
         name: O_COMMENT
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 1dd67575-7697-463a-afcc-a6a48daa3d99
-                stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
+              - columnCounter: 27037c75-88d2-4787-bb75-df7aa3a65df1
+                stepCounter: cd79335f-6dfb-45ef-b3de-198f8a6a5718
             transform: ""
     cteString: ""
     enabledColumnTestIDs: []
