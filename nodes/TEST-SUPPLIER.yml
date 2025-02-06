@@ -1,12 +1,12 @@
 fileVersion: 1
-id: dd57ca76-f782-495a-888c-f2852a0f4905
-name: CUSTOMER
+id: c5a6ab95-c397-48f6-b781-0d962d54aa39
+name: SUPPLIER
 operation:
   database: ""
   dataset: ""
   deployEnabled: true
   description: ""
-  locationName: TEST1
+  locationName: TEST
   metadata:
     columns:
       - acceptedValues:
@@ -14,13 +14,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 08b6b18d-a08d-47ee-95ec-907cb597d1b6
-          stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
+          columnCounter: 0f780463-2008-420c-9c7d-c44ad8b634c8
+          stepCounter: c5a6ab95-c397-48f6-b781-0d962d54aa39
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
-        name: C_CUSTKEY
+        name: S_SUPPKEY
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -31,13 +31,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 480e0f1a-a64f-456f-b7c0-fc6975650baa
-          stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
+          columnCounter: 358b95dc-b197-4687-8017-059f9e3f68ea
+          stepCounter: c5a6ab95-c397-48f6-b781-0d962d54aa39
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: C_NAME
+        name: S_NAME
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -48,13 +48,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 7d95beab-d998-40c3-85cd-7b2af9e974e6
-          stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
+          columnCounter: 92e735a3-4fbc-4e5e-b1d6-00b661f0e540
+          stepCounter: c5a6ab95-c397-48f6-b781-0d962d54aa39
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: C_ADDRESS
+        name: S_ADDRESS
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -65,13 +65,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: a5dde43c-cec3-4b77-b21f-650d8bea9c1f
-          stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
+          columnCounter: 65fb3cd5-78f2-4bd9-9030-cce4c7ef0367
+          stepCounter: c5a6ab95-c397-48f6-b781-0d962d54aa39
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
-        name: C_NATIONKEY
+        name: S_NATIONKEY
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -82,13 +82,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 67933b75-663b-4f08-8cf3-286411746595
-          stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
+          columnCounter: a98e5c7a-edf9-4cdf-b7b9-1f7c9c85b3db
+          stepCounter: c5a6ab95-c397-48f6-b781-0d962d54aa39
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: C_PHONE
+        name: S_PHONE
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -99,13 +99,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: b0a3cbc3-abf1-42dc-9440-ed03a2408250
-          stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
+          columnCounter: 15c2c9eb-76ed-4c21-8ad4-9a97c2b18da6
+          stepCounter: c5a6ab95-c397-48f6-b781-0d962d54aa39
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
-        name: C_ACCTBAL
+        name: S_ACCTBAL
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -116,41 +116,24 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: f155a9d2-2a99-429a-9f3f-29fc42aa5cf6
-          stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
+          columnCounter: 6f6b91bb-c137-4855-81b8-e5a9fd7f768f
+          stepCounter: c5a6ab95-c397-48f6-b781-0d962d54aa39
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: C_MKTSEGMENT
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: e26c05c3-1e5f-4e40-aacc-e6a683502fb1
-          stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
-        config: {}
-        dataType: varchar
-        defaultValue: ""
-        description: ""
-        name: C_COMMENT
+        name: S_COMMENT
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
         transform: ""
     join:
-      joinCondition: FROM {{ ref('TEST1', 'CUSTOMER') }}
-  name: CUSTOMER
+      joinCondition: FROM {{ ref('TEST', 'SUPPLIER') }}
+  name: SUPPLIER
   schema: ""
   sqlType: Source
-  table: CUSTOMER
+  table: SUPPLIER
   type: sourceInput
   version: 1
 type: Node

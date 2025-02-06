@@ -1,12 +1,12 @@
 fileVersion: 1
-id: 10469bd2-93d9-4abb-affb-288fc1da2ecf
-name: ORDERS
+id: 7bca19fa-5707-4184-9660-07472e803169
+name: STG_ORDERS
 operation:
   database: ""
   dataset: ""
   deployEnabled: true
   description: ""
-  locationName: TEST1
+  locationName: TEST
   metadata:
     columns:
       - acceptedValues:
@@ -14,10 +14,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: acebe3e0-3334-469c-9576-44c49f7bcd18
-          stepCounter: 10469bd2-93d9-4abb-affb-288fc1da2ecf
+          columnCounter: efc23ce4-489d-40a7-a637-3b98d5fd324a
+          stepCounter: 7bca19fa-5707-4184-9660-07472e803169
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
         name: O_ORDERKEY
@@ -31,10 +31,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 16cc9d4b-0585-469d-afa6-4f042e9fb617
-          stepCounter: 10469bd2-93d9-4abb-affb-288fc1da2ecf
+          columnCounter: dc06bf8d-4bf0-4789-b78b-cc9a4d976119
+          stepCounter: 7bca19fa-5707-4184-9660-07472e803169
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
         name: O_CUSTKEY
@@ -48,10 +48,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 20498242-8d1d-453e-9901-d6a5f6c5e2b0
-          stepCounter: 10469bd2-93d9-4abb-affb-288fc1da2ecf
+          columnCounter: dd75e99f-aada-40ee-b49f-6adb38a3b7bb
+          stepCounter: 7bca19fa-5707-4184-9660-07472e803169
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
         name: O_ORDERSTATUS
@@ -65,10 +65,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 08fcfd4e-dae1-49c5-a828-875162839ebb
-          stepCounter: 10469bd2-93d9-4abb-affb-288fc1da2ecf
+          columnCounter: 0c12f4cf-c6f0-4351-80d0-edda183a9b9f
+          stepCounter: 7bca19fa-5707-4184-9660-07472e803169
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
         name: O_TOTALPRICE
@@ -82,10 +82,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 867d5496-568d-401b-a9b2-4ecfbbbffba2
-          stepCounter: 10469bd2-93d9-4abb-affb-288fc1da2ecf
+          columnCounter: 7a3091cc-6b25-4375-bd6f-9361b910cac7
+          stepCounter: 7bca19fa-5707-4184-9660-07472e803169
         config: {}
-        dataType: date
+        dataType: DATE
         defaultValue: ""
         description: ""
         name: O_ORDERDATE
@@ -99,10 +99,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: ba6d86c4-17c9-446e-bdbd-63f21b6e2509
-          stepCounter: 10469bd2-93d9-4abb-affb-288fc1da2ecf
+          columnCounter: 80fac858-1c9e-48e5-a06c-2424536159de
+          stepCounter: 7bca19fa-5707-4184-9660-07472e803169
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
         name: O_ORDERPRIORITY
@@ -116,10 +116,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 536a1592-93ab-4d8c-b36f-04abbf4b6a40
-          stepCounter: 10469bd2-93d9-4abb-affb-288fc1da2ecf
+          columnCounter: 65083658-9926-49ba-b20b-1ee855b7fbb6
+          stepCounter: 7bca19fa-5707-4184-9660-07472e803169
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
         name: O_CLERK
@@ -133,10 +133,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 401abded-0043-41c4-8ae8-276011ab96c0
-          stepCounter: 10469bd2-93d9-4abb-affb-288fc1da2ecf
+          columnCounter: 535483aa-446b-4815-8200-abcaeec9fe2d
+          stepCounter: 7bca19fa-5707-4184-9660-07472e803169
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
         name: O_SHIPPRIORITY
@@ -150,10 +150,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 5cb42eb7-e595-4e73-90be-0a8bcbe2c2d5
-          stepCounter: 10469bd2-93d9-4abb-affb-288fc1da2ecf
+          columnCounter: d039039b-27a0-4427-a76c-08c4e9565f85
+          stepCounter: 7bca19fa-5707-4184-9660-07472e803169
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
         name: O_COMMENT
@@ -163,11 +163,11 @@ operation:
             transform: ""
         transform: ""
     join:
-      joinCondition: FROM {{ ref('TEST1', 'ORDERS') }}
-  name: ORDERS
+      joinCondition: FROM {{ ref('TEST', 'STG_ORDERS') }}
+  name: STG_ORDERS
   schema: ""
   sqlType: Source
-  table: ORDERS
+  table: STG_ORDERS
   type: sourceInput
   version: 1
 type: Node

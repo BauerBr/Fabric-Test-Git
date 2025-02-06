@@ -1,0 +1,241 @@
+fileVersion: 1
+id: 5d8c62f8-c5e7-4937-a1b7-2fddcdbee91d
+name: STG_CUSTOMER_PARTSUPP
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: TEST
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 333dae26-9d85-4580-ac76-55f92b020ded
+          stepCounter: 5d8c62f8-c5e7-4937-a1b7-2fddcdbee91d
+        config: {}
+        dataType: DECIMAL(38,6)
+        defaultValue: ""
+        description: ""
+        name: C_CUSTKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d0eca10-1848-4273-ba0e-e77bcb976ccf
+          stepCounter: 5d8c62f8-c5e7-4937-a1b7-2fddcdbee91d
+        config: {}
+        dataType: VARCHAR(8000)
+        defaultValue: ""
+        description: ""
+        name: C_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0e11687d-9237-4362-b26e-29b82d26530c
+          stepCounter: 5d8c62f8-c5e7-4937-a1b7-2fddcdbee91d
+        config: {}
+        dataType: VARCHAR(8000)
+        defaultValue: ""
+        description: ""
+        name: C_ADDRESS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 50364ed6-e06d-4619-b90d-ab7841f739a4
+          stepCounter: 5d8c62f8-c5e7-4937-a1b7-2fddcdbee91d
+        config: {}
+        dataType: DECIMAL(38,6)
+        defaultValue: ""
+        description: ""
+        name: C_NATIONKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00af2b2d-bc0e-4f2d-b8da-92a15804cfa8
+          stepCounter: 5d8c62f8-c5e7-4937-a1b7-2fddcdbee91d
+        config: {}
+        dataType: VARCHAR(8000)
+        defaultValue: ""
+        description: ""
+        name: C_PHONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5ccd9645-c7ac-4300-a881-fb37d619c6ed
+          stepCounter: 5d8c62f8-c5e7-4937-a1b7-2fddcdbee91d
+        config: {}
+        dataType: DECIMAL(38,6)
+        defaultValue: ""
+        description: ""
+        name: C_ACCTBAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7753033c-25c7-4b43-83b4-92d8fcbd9bc3
+          stepCounter: 5d8c62f8-c5e7-4937-a1b7-2fddcdbee91d
+        config: {}
+        dataType: VARCHAR(8000)
+        defaultValue: ""
+        description: ""
+        name: C_MKTSEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26b1f7d2-73cc-4a45-be63-0138647963cf
+          stepCounter: 5d8c62f8-c5e7-4937-a1b7-2fddcdbee91d
+        config: {}
+        dataType: VARCHAR(8000)
+        defaultValue: ""
+        description: ""
+        name: C_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fde94db5-2404-4185-b80a-d6507ab553b9
+          stepCounter: 5d8c62f8-c5e7-4937-a1b7-2fddcdbee91d
+        config: {}
+        dataType: DECIMAL(38,6)
+        defaultValue: ""
+        description: ""
+        name: PS_PARTKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 18c41105-e6a7-4dce-bf3a-2c6233551d5e
+          stepCounter: 5d8c62f8-c5e7-4937-a1b7-2fddcdbee91d
+        config: {}
+        dataType: DECIMAL(38,6)
+        defaultValue: ""
+        description: ""
+        name: PS_SUPPKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3536d6a2-cf82-4017-9349-23b89d6950eb
+          stepCounter: 5d8c62f8-c5e7-4937-a1b7-2fddcdbee91d
+        config: {}
+        dataType: DECIMAL(38,6)
+        defaultValue: ""
+        description: ""
+        name: PS_AVAILQTY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 457f84bc-3d69-4753-82f3-77802ee38763
+          stepCounter: 5d8c62f8-c5e7-4937-a1b7-2fddcdbee91d
+        config: {}
+        dataType: DECIMAL(38,6)
+        defaultValue: ""
+        description: ""
+        name: PS_SUPPLYCOST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6f0cfb37-bb01-4ec0-a1ac-8ea2ffc950e5
+          stepCounter: 5d8c62f8-c5e7-4937-a1b7-2fddcdbee91d
+        config: {}
+        dataType: VARCHAR(8000)
+        defaultValue: ""
+        description: ""
+        name: PS_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+    join:
+      joinCondition: FROM {{ ref('TEST', 'STG_CUSTOMER_PARTSUPP') }}
+  name: STG_CUSTOMER_PARTSUPP
+  schema: ""
+  sqlType: Source
+  table: STG_CUSTOMER_PARTSUPP
+  type: sourceInput
+  version: 1
+type: Node

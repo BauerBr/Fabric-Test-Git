@@ -1,12 +1,12 @@
 fileVersion: 1
-id: 91e9846d-03a9-41a3-9640-7b14ae0b6435
-name: NATION
+id: 015f9b52-d614-4591-a4a5-e6b5de2295b8
+name: STG_NATION
 operation:
   database: ""
   dataset: ""
   deployEnabled: true
   description: ""
-  locationName: TEST1
+  locationName: TEST
   metadata:
     columns:
       - acceptedValues:
@@ -14,10 +14,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 6684dd16-8985-4314-850d-c415dc7fcaf2
-          stepCounter: 91e9846d-03a9-41a3-9640-7b14ae0b6435
+          columnCounter: 8c5b93f7-323e-4b38-88f0-e8b3e9d2ba55
+          stepCounter: 015f9b52-d614-4591-a4a5-e6b5de2295b8
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
         name: N_NATIONKEY
@@ -31,10 +31,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 4185109a-b9d1-4f14-b484-0b46807743ba
-          stepCounter: 91e9846d-03a9-41a3-9640-7b14ae0b6435
+          columnCounter: 594af851-6ee9-4d46-9fd7-dcf395472bcf
+          stepCounter: 015f9b52-d614-4591-a4a5-e6b5de2295b8
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
         name: N_NAME
@@ -48,10 +48,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: f3cb19d1-e3aa-48c9-9f77-783ccf7348bc
-          stepCounter: 91e9846d-03a9-41a3-9640-7b14ae0b6435
+          columnCounter: b0a07c22-f018-49c3-83d5-676e0c9596d7
+          stepCounter: 015f9b52-d614-4591-a4a5-e6b5de2295b8
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
         name: N_REGIONKEY
@@ -65,10 +65,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 8d9d2167-c678-43ec-acf0-02ebcfa56d51
-          stepCounter: 91e9846d-03a9-41a3-9640-7b14ae0b6435
+          columnCounter: e12508cb-f504-41c8-9b8d-84450aa6f12b
+          stepCounter: 015f9b52-d614-4591-a4a5-e6b5de2295b8
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
         name: N_COMMENT
@@ -78,11 +78,11 @@ operation:
             transform: ""
         transform: ""
     join:
-      joinCondition: FROM {{ ref('TEST1', 'NATION') }}
-  name: NATION
+      joinCondition: FROM {{ ref('TEST', 'STG_NATION') }}
+  name: STG_NATION
   schema: ""
   sqlType: Source
-  table: NATION
+  table: STG_NATION
   type: sourceInput
   version: 1
 type: Node

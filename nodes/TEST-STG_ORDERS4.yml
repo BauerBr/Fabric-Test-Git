@@ -1,12 +1,12 @@
 fileVersion: 1
-id: c8ca4576-b52d-4e92-b7db-d3c8aafc66d0
-name: SUPPLIER
+id: 1861db1f-67a6-4c0b-80ae-54ada429a06a
+name: STG_ORDERS4
 operation:
   database: ""
   dataset: ""
   deployEnabled: true
   description: ""
-  locationName: TEST1
+  locationName: TEST
   metadata:
     columns:
       - acceptedValues:
@@ -14,13 +14,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 988ad05f-76e6-4bd0-8291-9205e6f281a6
-          stepCounter: c8ca4576-b52d-4e92-b7db-d3c8aafc66d0
+          columnCounter: 2a23e889-b7b6-46c1-bd80-15efc776edca
+          stepCounter: 1861db1f-67a6-4c0b-80ae-54ada429a06a
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
-        name: S_SUPPKEY
+        name: O_ORDERKEY
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -31,13 +31,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: c7b8e398-16f2-4e83-adcb-3b78125e4077
-          stepCounter: c8ca4576-b52d-4e92-b7db-d3c8aafc66d0
+          columnCounter: bc048d05-357f-4d8f-855e-7b591810db7d
+          stepCounter: 1861db1f-67a6-4c0b-80ae-54ada429a06a
         config: {}
-        dataType: varchar
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
-        name: S_NAME
+        name: O_CUSTKEY
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -48,13 +48,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: d67f8d9c-5a06-4c6e-8ddc-5a7c6a7261ff
-          stepCounter: c8ca4576-b52d-4e92-b7db-d3c8aafc66d0
+          columnCounter: c4663bdd-6ad9-449a-9c60-deaddd60073e
+          stepCounter: 1861db1f-67a6-4c0b-80ae-54ada429a06a
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: S_ADDRESS
+        name: O_ORDERSTATUS
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -65,13 +65,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: ef2e77da-eaa2-426c-a0e8-207afeff9843
-          stepCounter: c8ca4576-b52d-4e92-b7db-d3c8aafc66d0
+          columnCounter: 71e3f679-f592-46c8-b8d5-1c944a4c0a1a
+          stepCounter: 1861db1f-67a6-4c0b-80ae-54ada429a06a
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
-        name: S_NATIONKEY
+        name: O_TOTALPRICE
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -82,13 +82,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 02b1fed8-6408-44df-b732-a5632bd44cb2
-          stepCounter: c8ca4576-b52d-4e92-b7db-d3c8aafc66d0
+          columnCounter: a37e1acf-67fb-4724-85b8-9c9eeae736cc
+          stepCounter: 1861db1f-67a6-4c0b-80ae-54ada429a06a
         config: {}
-        dataType: varchar
+        dataType: DATE
         defaultValue: ""
         description: ""
-        name: S_PHONE
+        name: O_ORDERDATE
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -99,13 +99,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: c23f0fdd-d298-4fac-9f4d-bd2b31e70a2e
-          stepCounter: c8ca4576-b52d-4e92-b7db-d3c8aafc66d0
+          columnCounter: 750ef979-fbce-4149-9b10-0d93a555ecfc
+          stepCounter: 1861db1f-67a6-4c0b-80ae-54ada429a06a
         config: {}
-        dataType: decimal
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: S_ACCTBAL
+        name: O_ORDERPRIORITY
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -116,24 +116,58 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: dc9f0d19-aa5c-4475-a74a-3f7f0482dc60
-          stepCounter: c8ca4576-b52d-4e92-b7db-d3c8aafc66d0
+          columnCounter: e4422106-6925-43e6-81cf-5ffbfbbd5c93
+          stepCounter: 1861db1f-67a6-4c0b-80ae-54ada429a06a
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: S_COMMENT
+        name: O_CLERK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8c364613-09f9-4836-a989-33a3596f3278
+          stepCounter: 1861db1f-67a6-4c0b-80ae-54ada429a06a
+        config: {}
+        dataType: DECIMAL(38,6)
+        defaultValue: ""
+        description: ""
+        name: O_SHIPPRIORITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 778ae3a8-0f06-45f3-9eaf-029f91b46aa2
+          stepCounter: 1861db1f-67a6-4c0b-80ae-54ada429a06a
+        config: {}
+        dataType: VARCHAR(8000)
+        defaultValue: ""
+        description: ""
+        name: O_COMMENT
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
         transform: ""
     join:
-      joinCondition: FROM {{ ref('TEST1', 'SUPPLIER') }}
-  name: SUPPLIER
+      joinCondition: FROM {{ ref('TEST', 'STG_ORDERS4') }}
+  name: STG_ORDERS4
   schema: ""
   sqlType: Source
-  table: SUPPLIER
+  table: STG_ORDERS4
   type: sourceInput
   version: 1
 type: Node

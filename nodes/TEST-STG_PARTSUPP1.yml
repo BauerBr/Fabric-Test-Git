@@ -1,0 +1,105 @@
+fileVersion: 1
+id: 2e7c268c-b707-44c3-9227-d15e9640eeb2
+name: STG_PARTSUPP1
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: TEST
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 89f8fea4-9cfb-4c8c-90e6-395e93485659
+          stepCounter: 2e7c268c-b707-44c3-9227-d15e9640eeb2
+        config: {}
+        dataType: DECIMAL(38,6)
+        defaultValue: ""
+        description: ""
+        name: PS_PARTKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 695ecd94-0ffe-4fa5-b612-6156ec82d2df
+          stepCounter: 2e7c268c-b707-44c3-9227-d15e9640eeb2
+        config: {}
+        dataType: DECIMAL(38,6)
+        defaultValue: ""
+        description: ""
+        name: PS_SUPPKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 17ec7bef-b761-43b8-b666-0578304f1357
+          stepCounter: 2e7c268c-b707-44c3-9227-d15e9640eeb2
+        config: {}
+        dataType: DECIMAL(38,6)
+        defaultValue: ""
+        description: ""
+        name: PS_AVAILQTY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6897f014-04cb-4e27-a4d4-32af1a230bc7
+          stepCounter: 2e7c268c-b707-44c3-9227-d15e9640eeb2
+        config: {}
+        dataType: DECIMAL(38,6)
+        defaultValue: ""
+        description: ""
+        name: PS_SUPPLYCOST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 61de61b3-50f1-4146-8bce-f56af814a056
+          stepCounter: 2e7c268c-b707-44c3-9227-d15e9640eeb2
+        config: {}
+        dataType: VARCHAR(8000)
+        defaultValue: ""
+        description: ""
+        name: PS_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+    join:
+      joinCondition: FROM {{ ref('TEST', 'STG_PARTSUPP1') }}
+  name: STG_PARTSUPP1
+  schema: ""
+  sqlType: Source
+  table: STG_PARTSUPP1
+  type: sourceInput
+  version: 1
+type: Node

@@ -1,12 +1,12 @@
 fileVersion: 1
-id: d63bbaf8-0485-4253-9934-6760e24f0f4c
-name: STG_PARTSUPP1
+id: e17538bb-9ca2-4751-8d8d-651eb0066e20
+name: PARTSUPP
 operation:
   database: ""
   dataset: ""
   deployEnabled: true
   description: ""
-  locationName: TEST1
+  locationName: TEST
   metadata:
     columns:
       - acceptedValues:
@@ -14,10 +14,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: af1d65f5-24e0-4e80-aa7c-e825e5be2ae0
-          stepCounter: d63bbaf8-0485-4253-9934-6760e24f0f4c
+          columnCounter: 30c4e43e-7327-4db6-bbcc-9fa4c8f330b5
+          stepCounter: e17538bb-9ca2-4751-8d8d-651eb0066e20
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
         name: PS_PARTKEY
@@ -31,10 +31,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 593300c5-c402-4df9-992f-6816dfc3e5bb
-          stepCounter: d63bbaf8-0485-4253-9934-6760e24f0f4c
+          columnCounter: de6609da-2995-46ee-b3cc-63176c8df1a6
+          stepCounter: e17538bb-9ca2-4751-8d8d-651eb0066e20
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
         name: PS_SUPPKEY
@@ -48,10 +48,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 7d3ebf0c-011c-417f-a024-62d17db133c4
-          stepCounter: d63bbaf8-0485-4253-9934-6760e24f0f4c
+          columnCounter: 57c81816-de14-41af-a175-0be65439e450
+          stepCounter: e17538bb-9ca2-4751-8d8d-651eb0066e20
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
         name: PS_AVAILQTY
@@ -65,10 +65,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 0a779de8-2d2b-43c1-a43a-1148b269c46d
-          stepCounter: d63bbaf8-0485-4253-9934-6760e24f0f4c
+          columnCounter: 3895f9d2-fdba-40b8-9242-42a424494644
+          stepCounter: e17538bb-9ca2-4751-8d8d-651eb0066e20
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
         name: PS_SUPPLYCOST
@@ -82,10 +82,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 08fc2600-b812-46b6-8d2c-c0f171b22888
-          stepCounter: d63bbaf8-0485-4253-9934-6760e24f0f4c
+          columnCounter: 3ecbeac3-0d57-4954-bf06-802f3e22c954
+          stepCounter: e17538bb-9ca2-4751-8d8d-651eb0066e20
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
         name: PS_COMMENT
@@ -95,11 +95,11 @@ operation:
             transform: ""
         transform: ""
     join:
-      joinCondition: FROM {{ ref('TEST1', 'STG_PARTSUPP1') }}
-  name: STG_PARTSUPP1
+      joinCondition: FROM {{ ref('TEST', 'PARTSUPP') }}
+  name: PARTSUPP
   schema: ""
   sqlType: Source
-  table: STG_PARTSUPP1
+  table: PARTSUPP
   type: sourceInput
   version: 1
 type: Node

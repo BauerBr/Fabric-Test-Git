@@ -1,12 +1,12 @@
 fileVersion: 1
-id: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
-name: spt_monitor
+id: 46f75082-1971-4ec6-8ede-798b52f0663d
+name: ORDERS
 operation:
   database: ""
   dataset: ""
   deployEnabled: true
   description: ""
-  locationName: TEST1
+  locationName: TEST
   metadata:
     columns:
       - acceptedValues:
@@ -14,14 +14,14 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: c3ee520a-2e7b-4af7-9fb5-ab23c66dd84c
-          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+          columnCounter: a2bd7e10-1f29-41a0-aa82-b0f4ff8fa651
+          stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
         config: {}
-        dataType: datetime
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
-        name: lastrun
-        nullable: false
+        name: O_ORDERKEY
+        nullable: true
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
@@ -31,14 +31,14 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 9b5ba7bc-bf67-47fa-bb34-899f5d301100
-          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+          columnCounter: 1c13ab62-9ece-41da-8269-0aa40332e10b
+          stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
         config: {}
-        dataType: int
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
-        name: cpu_busy
-        nullable: false
+        name: O_CUSTKEY
+        nullable: true
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
@@ -48,14 +48,14 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 91bfb62e-a24a-4e06-94d0-44f9bd6d4a6e
-          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+          columnCounter: e0d38a49-bcd9-47b1-8d29-a241564b1a43
+          stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
         config: {}
-        dataType: int
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: io_busy
-        nullable: false
+        name: O_ORDERSTATUS
+        nullable: true
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
@@ -65,14 +65,14 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 7b007136-d1a3-43ac-9261-31ab3606c4b7
-          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+          columnCounter: 479cd8c1-5b69-4441-b0a6-1a7a8b3eb873
+          stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
         config: {}
-        dataType: int
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
-        name: idle
-        nullable: false
+        name: O_TOTALPRICE
+        nullable: true
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
@@ -82,14 +82,14 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 9beabcbb-90ed-4c96-a26e-fa2f253a2bf1
-          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+          columnCounter: 02dcca5c-f072-4299-afe3-8c945dcb0f4d
+          stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
         config: {}
-        dataType: int
+        dataType: DATE
         defaultValue: ""
         description: ""
-        name: pack_received
-        nullable: false
+        name: O_ORDERDATE
+        nullable: true
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
@@ -99,14 +99,14 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: a5284e67-05b6-4007-a4ac-4efde140b6d0
-          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+          columnCounter: 0d0805e4-1977-41a5-bb10-66632724ec0c
+          stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
         config: {}
-        dataType: int
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: pack_sent
-        nullable: false
+        name: O_ORDERPRIORITY
+        nullable: true
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
@@ -116,14 +116,14 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: aa6f0df3-b742-4b09-88da-101e969b31ff
-          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+          columnCounter: f614e0da-3cdf-4d09-94bb-68b32c748b3d
+          stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
         config: {}
-        dataType: int
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: connections
-        nullable: false
+        name: O_CLERK
+        nullable: true
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
@@ -133,14 +133,14 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: e1ce1105-9b28-41f3-8f45-918c7dfdee07
-          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+          columnCounter: 91253a61-41d7-4171-92e3-a611b8610da3
+          stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
         config: {}
-        dataType: int
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
-        name: pack_errors
-        nullable: false
+        name: O_SHIPPRIORITY
+        nullable: true
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
@@ -150,58 +150,24 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 323d9cb5-eb8b-4315-ae3f-068d77ad46ad
-          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
+          columnCounter: 1dd67575-7697-463a-afcc-a6a48daa3d99
+          stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
         config: {}
-        dataType: int
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: total_read
-        nullable: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 21b0bd0c-2f96-4c93-9127-965763513846
-          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
-        config: {}
-        dataType: int
-        defaultValue: ""
-        description: ""
-        name: total_write
-        nullable: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 8dd49d6a-931a-4747-a312-08e458cf5515
-          stepCounter: 71dfad6d-bd22-4dc4-81cf-1a3d11014b9b
-        config: {}
-        dataType: int
-        defaultValue: ""
-        description: ""
-        name: total_errors
-        nullable: false
+        name: O_COMMENT
+        nullable: true
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
         transform: ""
     join:
-      joinCondition: FROM {{ ref('TEST1', 'spt_monitor') }}
-  name: spt_monitor
+      joinCondition: FROM {{ ref('TEST', 'ORDERS') }}
+  name: ORDERS
   schema: ""
   sqlType: Source
-  table: spt_monitor
+  table: ORDERS
   type: sourceInput
   version: 1
 type: Node

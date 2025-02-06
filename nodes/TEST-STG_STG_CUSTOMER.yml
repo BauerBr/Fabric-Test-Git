@@ -1,12 +1,12 @@
 fileVersion: 1
-id: ecae2008-2308-4b6f-a89f-2674f7829564
-name: PART
+id: 89d0fcd8-f051-4709-807b-5be5436cf7e8
+name: STG_STG_CUSTOMER
 operation:
   database: ""
   dataset: ""
   deployEnabled: true
   description: ""
-  locationName: TEST1
+  locationName: TEST
   metadata:
     columns:
       - acceptedValues:
@@ -14,13 +14,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: d1b2353f-b9ab-47d5-8d95-838a0fecc79a
-          stepCounter: ecae2008-2308-4b6f-a89f-2674f7829564
+          columnCounter: 8b39c067-cc13-458d-b131-20f218e0d1f5
+          stepCounter: 89d0fcd8-f051-4709-807b-5be5436cf7e8
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
-        name: P_PARTKEY
+        name: C_CUSTKEY
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -31,13 +31,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: be905e93-510f-4e92-b70b-7a960eb7a3ca
-          stepCounter: ecae2008-2308-4b6f-a89f-2674f7829564
+          columnCounter: d8005a0f-5ff2-48cd-a26b-eadd92d5a3f7
+          stepCounter: 89d0fcd8-f051-4709-807b-5be5436cf7e8
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: P_NAME
+        name: C_NAME
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -48,13 +48,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 2030d53c-d5d2-466a-87aa-19cc7fe6f4d6
-          stepCounter: ecae2008-2308-4b6f-a89f-2674f7829564
+          columnCounter: 747181b2-c284-42f7-9f4d-b4150de6e123
+          stepCounter: 89d0fcd8-f051-4709-807b-5be5436cf7e8
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: P_MFGR
+        name: C_ADDRESS
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -65,13 +65,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: a01b8fca-803e-4d42-a458-204d1a3abdd1
-          stepCounter: ecae2008-2308-4b6f-a89f-2674f7829564
+          columnCounter: b0650eef-8bc8-4c02-84c4-dc8f8d1d49b7
+          stepCounter: 89d0fcd8-f051-4709-807b-5be5436cf7e8
         config: {}
-        dataType: varchar
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
-        name: P_BRAND
+        name: C_NATIONKEY
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -82,13 +82,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 1de2d246-b51e-4a8b-92d8-eef2c12832d7
-          stepCounter: ecae2008-2308-4b6f-a89f-2674f7829564
+          columnCounter: 433d0c62-10cb-4954-a812-f51595c58414
+          stepCounter: 89d0fcd8-f051-4709-807b-5be5436cf7e8
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: P_TYPE
+        name: C_PHONE
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -99,13 +99,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: f3912591-85ba-4dc6-b8a1-3923d06177c7
-          stepCounter: ecae2008-2308-4b6f-a89f-2674f7829564
+          columnCounter: 784f7af2-c239-4b2f-bf1d-c0e538e195b2
+          stepCounter: 89d0fcd8-f051-4709-807b-5be5436cf7e8
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
-        name: P_SIZE
+        name: C_ACCTBAL
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -116,13 +116,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: d8098a89-d0ad-4c08-82d3-d60d1a6f9f7f
-          stepCounter: ecae2008-2308-4b6f-a89f-2674f7829564
+          columnCounter: ccf6d6e8-4a3d-43a7-9b9a-9d2052d5e990
+          stepCounter: 89d0fcd8-f051-4709-807b-5be5436cf7e8
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: P_CONTAINER
+        name: C_MKTSEGMENT
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -133,41 +133,24 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: ef2da61d-9a0e-4ffa-b8c1-d36ff8e45eaf
-          stepCounter: ecae2008-2308-4b6f-a89f-2674f7829564
+          columnCounter: f7ba54d6-a576-45d8-88e9-42f9a4f1aa19
+          stepCounter: 89d0fcd8-f051-4709-807b-5be5436cf7e8
         config: {}
-        dataType: decimal
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: P_RETAILPRICE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 218c3618-b8eb-4960-99e7-89695b100f09
-          stepCounter: ecae2008-2308-4b6f-a89f-2674f7829564
-        config: {}
-        dataType: varchar
-        defaultValue: ""
-        description: ""
-        name: P_COMMENT
+        name: C_COMMENT
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
         transform: ""
     join:
-      joinCondition: FROM {{ ref('TEST1', 'PART') }}
-  name: PART
+      joinCondition: FROM {{ ref('TEST', 'STG_STG_CUSTOMER') }}
+  name: STG_STG_CUSTOMER
   schema: ""
   sqlType: Source
-  table: PART
+  table: STG_STG_CUSTOMER
   type: sourceInput
   version: 1
 type: Node

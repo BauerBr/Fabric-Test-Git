@@ -1,12 +1,12 @@
 fileVersion: 1
-id: 2588cb22-e72b-405a-a250-ec93c79e4792
+id: 80034ada-8ddd-4a54-8415-b7077cbe7969
 name: REGION
 operation:
   database: ""
   dataset: ""
   deployEnabled: true
   description: ""
-  locationName: TEST1
+  locationName: TEST
   metadata:
     columns:
       - acceptedValues:
@@ -14,10 +14,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: beb52ae7-2d06-4981-8b1a-dadf28f67efa
-          stepCounter: 2588cb22-e72b-405a-a250-ec93c79e4792
+          columnCounter: fd764bb7-4d97-4b46-a820-cf79a7541a24
+          stepCounter: 80034ada-8ddd-4a54-8415-b7077cbe7969
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
         name: R_REGIONKEY
@@ -31,10 +31,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 3f0dbb86-7ce1-4e86-9fab-d1c8254c42b6
-          stepCounter: 2588cb22-e72b-405a-a250-ec93c79e4792
+          columnCounter: 38b4c7e1-dc27-43e6-9a70-613fe157806b
+          stepCounter: 80034ada-8ddd-4a54-8415-b7077cbe7969
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
         name: R_NAME
@@ -48,10 +48,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: fafe0b9d-2c19-46b5-b1f3-3a98dc42b65d
-          stepCounter: 2588cb22-e72b-405a-a250-ec93c79e4792
+          columnCounter: 56ad1b14-74f2-4a79-95f9-a39d47730451
+          stepCounter: 80034ada-8ddd-4a54-8415-b7077cbe7969
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
         name: R_COMMENT
@@ -61,7 +61,7 @@ operation:
             transform: ""
         transform: ""
     join:
-      joinCondition: FROM {{ ref('TEST1', 'REGION') }}
+      joinCondition: FROM {{ ref('TEST', 'REGION') }}
   name: REGION
   schema: ""
   sqlType: Source

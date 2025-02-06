@@ -1,12 +1,12 @@
 fileVersion: 1
-id: 14fc1a67-9d3b-4ab5-be18-55cbf7e6c183
+id: a1dd11b7-c7be-424b-b438-bd096a8a654f
 name: DAILY_14_TOTAL_SHORT
 operation:
   database: ""
   dataset: ""
   deployEnabled: true
   description: ""
-  locationName: TEST1
+  locationName: TEST
   metadata:
     columns:
       - acceptedValues:
@@ -14,10 +14,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: f2f0ca41-0ad5-4958-9a23-7d626d5b47aa
-          stepCounter: 14fc1a67-9d3b-4ab5-be18-55cbf7e6c183
+          columnCounter: e49f344b-a7d8-424c-a0f8-923f0e9f05bc
+          stepCounter: a1dd11b7-c7be-424b-b438-bd096a8a654f
         config: {}
-        dataType: varchar
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
         name: V
@@ -31,10 +31,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 9beec84f-72e8-4eb6-a6af-a92e471b1922
-          stepCounter: 14fc1a67-9d3b-4ab5-be18-55cbf7e6c183
+          columnCounter: da16d121-211a-48f8-accc-683428cb9ada
+          stepCounter: a1dd11b7-c7be-424b-b438-bd096a8a654f
         config: {}
-        dataType: datetime2
+        dataType: DATETIME2(6)
         defaultValue: ""
         description: ""
         name: T
@@ -44,7 +44,7 @@ operation:
             transform: ""
         transform: ""
     join:
-      joinCondition: FROM {{ ref('TEST1', 'DAILY_14_TOTAL_SHORT') }}
+      joinCondition: FROM {{ ref('TEST', 'DAILY_14_TOTAL_SHORT') }}
   name: DAILY_14_TOTAL_SHORT
   schema: ""
   sqlType: Source

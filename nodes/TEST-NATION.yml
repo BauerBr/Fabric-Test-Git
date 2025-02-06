@@ -1,12 +1,12 @@
 fileVersion: 1
-id: 616bfede-6095-49ed-b786-71b11556951b
-name: PARTSUPP
+id: e2b43fa1-b292-420a-be62-1d6f42a292eb
+name: NATION
 operation:
   database: ""
   dataset: ""
   deployEnabled: true
   description: ""
-  locationName: TEST1
+  locationName: TEST
   metadata:
     columns:
       - acceptedValues:
@@ -14,13 +14,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 86a41987-1bc4-4405-a90a-3ac86f8f1b28
-          stepCounter: 616bfede-6095-49ed-b786-71b11556951b
+          columnCounter: a70170aa-5102-49e2-b736-b9caf3b6efd2
+          stepCounter: e2b43fa1-b292-420a-be62-1d6f42a292eb
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
-        name: PS_PARTKEY
+        name: N_NATIONKEY
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -31,13 +31,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 68bf2d12-0c10-4b04-b98b-cecadebae84e
-          stepCounter: 616bfede-6095-49ed-b786-71b11556951b
+          columnCounter: 175597e0-3e39-4655-9b19-6a7fe2db0145
+          stepCounter: e2b43fa1-b292-420a-be62-1d6f42a292eb
         config: {}
-        dataType: decimal
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: PS_SUPPKEY
+        name: N_NAME
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -48,13 +48,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: a1c9515c-dfa4-4160-b149-e7d89501815a
-          stepCounter: 616bfede-6095-49ed-b786-71b11556951b
+          columnCounter: 2ad44303-b56c-4537-8079-26b31d2dfc3c
+          stepCounter: e2b43fa1-b292-420a-be62-1d6f42a292eb
         config: {}
-        dataType: decimal
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
-        name: PS_AVAILQTY
+        name: N_REGIONKEY
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -65,41 +65,24 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: f66204de-408d-4592-90be-865ea2d3dcaf
-          stepCounter: 616bfede-6095-49ed-b786-71b11556951b
+          columnCounter: ad119aee-fcd8-4cb9-bcdb-e36c7ffe27d6
+          stepCounter: e2b43fa1-b292-420a-be62-1d6f42a292eb
         config: {}
-        dataType: decimal
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: PS_SUPPLYCOST
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: f3705420-230e-495d-9de9-f2d659da29cd
-          stepCounter: 616bfede-6095-49ed-b786-71b11556951b
-        config: {}
-        dataType: varchar
-        defaultValue: ""
-        description: ""
-        name: PS_COMMENT
+        name: N_COMMENT
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
         transform: ""
     join:
-      joinCondition: FROM {{ ref('TEST1', 'PARTSUPP') }}
-  name: PARTSUPP
+      joinCondition: FROM {{ ref('TEST', 'NATION') }}
+  name: NATION
   schema: ""
   sqlType: Source
-  table: PARTSUPP
+  table: NATION
   type: sourceInput
   version: 1
 type: Node
