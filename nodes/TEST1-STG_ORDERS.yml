@@ -92,7 +92,7 @@ operation:
           columnCounter: 516e3394-dd4f-4cb8-bc14-2d55adcd922f
           stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
         config: {}
-        dataType: VARCHAR(3000)
+        dataType: VARCHAR(4000)
         description: ""
         name: O_ORDERPRIORITY
         nullable: true
@@ -108,7 +108,7 @@ operation:
         config: {}
         dataType: DECIMAL(32,3)
         description: ""
-        name: Test
+        name: O_SHIPPRIORITY
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -151,6 +151,24 @@ operation:
               - columnCounter: e0d38a49-bcd9-47b1-8d29-a241564b1a43
                 stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
             transform: UPPER([ORDERS].[O_ORDERSTATUS])
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2ade44ed-0642-42d1-8c19-c3c2424224c1
+          stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
+        config: {}
+        dataType: VARCHAR(4000)
+        defaultValue: ""
+        description: ""
+        name: TEST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 91253a61-41d7-4171-92e3-a611b8610da3
+                stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
+            transform: UPPER([ORDERS].[O_SHIPPRIORITY])
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
