@@ -81,7 +81,7 @@ operation:
           columnCounter: a8dc4f33-6c85-4189-8015-87b7bfd424fa
           stepCounter: 1c8d2d7a-3f3a-4132-ae46-bbbfffd6c444
         config: {}
-        dataType: ""
+        dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
         name: N_COMMENT_UPPER
