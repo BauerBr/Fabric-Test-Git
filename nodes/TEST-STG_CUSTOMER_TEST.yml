@@ -1,6 +1,6 @@
 fileVersion: 1
 id: eda63b8a-bcd6-44c7-941e-315658eabca0
-name: STG_CUSTOMER_NEW_NAME
+name: STG_CUSTOMER_TEST
 operation:
   config:
     insertStrategy: INSERT
@@ -24,7 +24,7 @@ operation:
         config: {}
         dataType: decimal
         description: ""
-        name: C_CUSTKEY_rename
+        name: C_CUSTKEY_RENAME
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -38,7 +38,7 @@ operation:
         config: {}
         dataType: varchar
         description: ""
-        name: C_NAME
+        name: C_NAME_RENAME
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -106,55 +106,19 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 1b5282ba-c533-4ee0-9048-e8f886099c06
+          columnCounter: 12bc40d2-c22b-4ca0-aa44-8949b1a6b7c0
           stepCounter: eda63b8a-bcd6-44c7-941e-315658eabca0
         config: {}
-        dataType: varchar
+        dataType: ""
         defaultValue: ""
         description: ""
-        name: C_TEST_1
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 67933b75-663b-4f08-8cf3-286411746595
-                stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
-            transform: UPPER("CUSTOMER"."C_PHONE")
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: a7a0e85d-a395-43fd-a983-eb786c778508
-          stepCounter: eda63b8a-bcd6-44c7-941e-315658eabca0
-        config: {}
-        dataType: varchar
-        defaultValue: ""
-        description: ""
-        name: Blah_
+        name: Test
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: b0a3cbc3-abf1-42dc-9440-ed03a2408250
                 stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
-            transform: ROUND("CUSTOMER"."C_ACCTBAL")
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: a3f14d2a-5ed3-4158-9e64-f75ccdc52fe4
-          stepCounter: eda63b8a-bcd6-44c7-941e-315658eabca0
-        config: {}
-        dataType: varchar
-        defaultValue: ""
-        description: ""
-        name: hi
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: "0"
-                stepCounter: "0"
-            transform: ""
+            transform: UPPER([CUSTOMER].[C_ACCTBAL])
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
@@ -166,9 +130,9 @@ operation:
             nodeName: CUSTOMER
         join:
           joinCondition: FROM {{ ref('TEST1', 'CUSTOMER') }} [CUSTOMER]
-        name: STG_CUSTOMER_NEW_NAME
+        name: STG_CUSTOMER_TEST
         noLinkRefs: []
-  name: STG_CUSTOMER_NEW_NAME
+  name: STG_CUSTOMER_TEST
   overrideSQL: false
   schema: ""
   sqlType: Stage
