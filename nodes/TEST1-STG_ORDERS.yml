@@ -92,7 +92,7 @@ operation:
           columnCounter: 516e3394-dd4f-4cb8-bc14-2d55adcd922f
           stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
         config: {}
-        dataType: VARCHAR(8000)
+        dataType: VARCHAR(3000)
         description: ""
         name: O_ORDERPRIORITY
         nullable: true
