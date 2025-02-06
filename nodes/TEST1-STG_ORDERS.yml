@@ -141,15 +141,15 @@ operation:
           columnCounter: 3c889902-5d6c-4090-90e1-78335d0fbcdd
           stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
         config: {}
-        dataType: ""
+        dataType: VARCHAR(4000)
         defaultValue: ""
         description: ""
         name: O_ORDER_STATUS_UPPER
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: "0"
-                stepCounter: "0"
+              - columnCounter: e0d38a49-bcd9-47b1-8d29-a241564b1a43
+                stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
             transform: UPPER([ORDERS].[O_ORDERSTATUS])
     cteString: ""
     enabledColumnTestIDs: []
