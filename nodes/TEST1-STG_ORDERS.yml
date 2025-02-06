@@ -158,7 +158,7 @@ operation:
         dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: BLAH
+        name: BLAH_Rename
         nullable: true
         sourceColumnReferences:
           - columnReferences:
