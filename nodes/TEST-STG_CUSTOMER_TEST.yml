@@ -119,17 +119,42 @@ operation:
               - columnCounter: b0a3cbc3-abf1-42dc-9440-ed03a2408250
                 stepCounter: dd57ca76-f782-495a-888c-f2852a0f4905
             transform: UPPER([CUSTOMER].[C_ACCTBAL])
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e5cec580-2bb8-48ec-9c2a-08b3a0c2f264
+          stepCounter: eda63b8a-bcd6-44c7-941e-315658eabca0
+        config: {}
+        dataType: varchar(800)
+        defaultValue: ""
+        description: ""
+        name: order_id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: acebe3e0-3334-469c-9576-44c49f7bcd18
+                stepCounter: 10469bd2-93d9-4abb-affb-288fc1da2ecf
+            transform: ""
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          CUSTOMER: dd57ca76-f782-495a-888c-f2852a0f4905
+          ORDERS: 10469bd2-93d9-4abb-affb-288fc1da2ecf
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: TEST1
             nodeName: CUSTOMER
+          - locationName: TEST1
+            nodeName: ORDERS
         join:
-          joinCondition: FROM {{ ref('TEST1', 'CUSTOMER') }} [CUSTOMER]
+          joinCondition: |-
+            FROM {{ ref('TEST1', 'CUSTOMER') }} [CUSTOMER]
+            INNER JOIN {{ ref('TEST1', 'ORDERS') }} [ORDERS]
+            ON [CUSTOMER].C_CUSTKEY = [ORDERS].O_CUSTKEY
         name: STG_CUSTOMER_TEST
         noLinkRefs: []
   name: STG_CUSTOMER_TEST
