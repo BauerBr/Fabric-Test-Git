@@ -92,7 +92,7 @@ operation:
           columnCounter: 5bf8883c-759a-4b8b-9efb-2ce08e27d7fc
           stepCounter: eda63b8a-bcd6-44c7-941e-315658eabca0
         config: {}
-        dataType: varchar
+        dataType: decimal
         description: ""
         name: C_ACCTBAL
         nullable: true
@@ -109,7 +109,7 @@ operation:
           columnCounter: 12bc40d2-c22b-4ca0-aa44-8949b1a6b7c0
           stepCounter: eda63b8a-bcd6-44c7-941e-315658eabca0
         config: {}
-        dataType: ""
+        dataType: varchar(800)
         defaultValue: ""
         description: ""
         name: Test
