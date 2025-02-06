@@ -120,37 +120,37 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 85eb7a44-5199-46c5-85d0-24c58a5b2b11
-          stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
-        config: {}
-        dataType: VARCHAR(8000)
-        defaultValue: ""
-        description: ""
-        name: TEST
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 91253a61-41d7-4171-92e3-a611b8610da3
-                stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
-            transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
           columnCounter: 1eb44810-4702-433d-9e56-ce74604c32ba
           stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
         config: {}
-        dataType: VARCHAR(8000)
+        dataType: VARCHAR(4000)
         defaultValue: ""
         description: ""
-        name: BLAH_Rename
+        name: O_CLERK_UPPER
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: f614e0da-3cdf-4d09-94bb-68b32c748b3d
                 stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
             transform: UPPER([ORDERS].[O_CLERK])
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c889902-5d6c-4090-90e1-78335d0fbcdd
+          stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
+        config: {}
+        dataType: ""
+        defaultValue: ""
+        description: ""
+        name: O_ORDER_STATUS_UPPER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: UPPER([ORDERS].[O_ORDERSTATUS])
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
