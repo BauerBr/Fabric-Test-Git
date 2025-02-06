@@ -137,10 +137,10 @@ operation:
           columnCounter: 85eb7a44-5199-46c5-85d0-24c58a5b2b11
           stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
         config: {}
-        dataType: VARCHAR(8000)
+        dataType: VARCHAR(3000)
         defaultValue: ""
         description: ""
-        name: TEST
+        name: TEST_RENAME
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -152,19 +152,19 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 1eb44810-4702-433d-9e56-ce74604c32ba
+          columnCounter: 52944ebb-d701-4f74-8972-bc68bf38c403
           stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
         config: {}
         dataType: VARCHAR(8000)
         defaultValue: ""
         description: ""
-        name: BLAH
+        name: O_ORDERSTATUS_UPPER
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: f614e0da-3cdf-4d09-94bb-68b32c748b3d
+              - columnCounter: e0d38a49-bcd9-47b1-8d29-a241564b1a43
                 stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
-            transform: UPPER([ORDERS].[O_CLERK])
+            transform: UPPER([ORDERS].[O_ORDERSTATUS])
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
