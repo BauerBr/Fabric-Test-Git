@@ -25,7 +25,7 @@ operation:
         dataType: DECIMAL(38,6)
         description: ""
         name: O_ORDERKEY
-        nullable: true
+        nullable: false
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: a2bd7e10-1f29-41a0-aa82-b0f4ff8fa651
@@ -38,7 +38,7 @@ operation:
         config: {}
         dataType: DECIMAL(38,6)
         description: ""
-        name: O_CUSTKEY
+        name: O_CUSTKEY_RENAME
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -71,7 +71,7 @@ operation:
           columnCounter: 3c889902-5d6c-4090-90e1-78335d0fbcdd
           stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
         config: {}
-        dataType: VARCHAR(4000)
+        dataType: VARCHAR(3000)
         defaultValue: ""
         description: ""
         name: O_ORDER_STATUS_UPPER
@@ -104,18 +104,19 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 85a1297f-1291-4fe9-84ab-da75f9d238dd
+          columnCounter: 58cbc3a8-15bf-4e33-abb5-4848995dcdd0
           stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
         config: {}
-        dataType: VARBINARY(8000)
+        dataType: VARCHAR(20)
         defaultValue: ""
         description: ""
-        hashDetails:
-          hashAlgorithm: SHA1
-        hashedColumns: []
-        name: GH
+        name: BYE
         nullable: true
-        sourceColumnReferences: []
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0d0805e4-1977-41a5-bb10-66632724ec0c
+                stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
+            transform: ""
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
