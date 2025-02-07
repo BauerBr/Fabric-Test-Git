@@ -24,25 +24,11 @@ operation:
         config: {}
         dataType: DECIMAL(38,6)
         description: ""
-        name: O_ORDERKEY
+        name: O_ORDERKEY_RENAME
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: a2bd7e10-1f29-41a0-aa82-b0f4ff8fa651
-                stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: eb0c9bca-a5f7-4280-9ac0-104ebf1b242e
-          stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
-        config: {}
-        dataType: DECIMAL(38,6)
-        description: ""
-        name: O_CUSTKEY_RENAME
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 1c13ab62-9ece-41da-8269-0aa40332e10b
                 stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
             transform: ""
       - acceptedValues:
@@ -99,6 +85,24 @@ operation:
               - columnCounter: 91253a61-41d7-4171-92e3-a611b8610da3
                 stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
             transform: UPPER([ORDERS].[O_SHIPPRIORITY])
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a39cacb-d907-48b5-a983-79f96dbf13e8
+          stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: ADD_NEW
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 479cd8c1-5b69-4441-b0a6-1a7a8b3eb873
+                stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
+            transform: ""
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
