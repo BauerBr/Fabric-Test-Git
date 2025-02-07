@@ -39,7 +39,7 @@ operation:
         dataType: DECIMAL(38,6)
         description: ""
         name: O_CUSTKEY_RENAME
-        nullable: false
+        nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 1c13ab62-9ece-41da-8269-0aa40332e10b
