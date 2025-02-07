@@ -156,10 +156,10 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 2ade44ed-0642-42d1-8c19-c3c2424224c1
+          columnCounter: 50212782-b86c-4a99-af7f-d33523f3d2d7
           stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
         config: {}
-        dataType: VARCHAR(4000)
+        dataType: VARCHAR(1000)
         defaultValue: ""
         description: ""
         name: TEST
