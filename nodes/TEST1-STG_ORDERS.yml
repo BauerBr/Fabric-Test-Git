@@ -25,7 +25,7 @@ operation:
         dataType: DECIMAL(38,6)
         description: ""
         name: O_ORDERKEY
-        nullable: false
+        nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: a2bd7e10-1f29-41a0-aa82-b0f4ff8fa651
@@ -107,7 +107,7 @@ operation:
           columnCounter: 58cbc3a8-15bf-4e33-abb5-4848995dcdd0
           stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
         config: {}
-        dataType: VARCHAR(20)
+        dataType: VARCHAR(MAX)
         defaultValue: ""
         description: ""
         name: BYE
