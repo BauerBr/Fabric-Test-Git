@@ -22,7 +22,7 @@ operation:
           columnCounter: c9cebf5b-c8ca-4b98-bff8-4f6413d4a101
           stepCounter: 32e0bb97-7418-4c09-b587-9dc9d9ada14b
         config: {}
-        dataType: DECIMAL(32,5)
+        dataType: DECIMAL(38,6)
         description: ""
         name: O_ORDERKEY
         nullable: false
