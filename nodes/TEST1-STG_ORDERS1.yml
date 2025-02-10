@@ -106,7 +106,7 @@ operation:
           columnCounter: a227cfa3-b35f-49ff-b1ad-7f5fa4f29bb1
           stepCounter: 3844ea8d-a054-4605-8f8c-a49aaf135c5c
         config: {}
-        dataType: DECIMAL(38,6)
+        dataType: DECIMAL(36)
         description: ""
         name: O_SHIPPRIORITY
         nullable: true
