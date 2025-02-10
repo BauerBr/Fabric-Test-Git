@@ -165,7 +165,7 @@ operation:
         hashDetails:
           hashAlgorithm: SHA1
         hashedColumns: []
-        name: GH_2
+        name: GH
         nullable: true
         sourceColumnReferences:
           - columnReferences:
