@@ -44,7 +44,7 @@ operation:
           - columnReferences:
               - columnCounter: 1c13ab62-9ece-41da-8269-0aa40332e10b
                 stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
-            transform: ""
+            transform: " "
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b774782f-3649-4b2c-b3be-636530f2c07f
@@ -147,6 +147,23 @@ operation:
               - columnCounter: 1dd67575-7697-463a-afcc-a6a48daa3d99
                 stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e6300d7b-a14f-4765-89e4-a195cddfe4ec
+          stepCounter: 3844ea8d-a054-4605-8f8c-a49aaf135c5c
+        config: {}
+        dataType: VARBINARY(8000)
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns: []
+        name: GH
+        nullable: true
+        sourceColumnReferences: []
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

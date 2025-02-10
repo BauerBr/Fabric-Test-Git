@@ -30,7 +30,7 @@ operation:
           - columnReferences:
               - columnCounter: a2bd7e10-1f29-41a0-aa82-b0f4ff8fa651
                 stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
-            transform: ""
+            transform: " "
       - acceptedValues:
           strictMatch: true
           values: []
