@@ -103,20 +103,6 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: a227cfa3-b35f-49ff-b1ad-7f5fa4f29bb1
-          stepCounter: 3844ea8d-a054-4605-8f8c-a49aaf135c5c
-        config: {}
-        dataType: DECIMAL(36)
-        description: ""
-        name: O_SHIPPRIORITY
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 91253a61-41d7-4171-92e3-a611b8610da3
-                stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: e65cf4d0-39b7-4617-8688-c7dc17452200
           stepCounter: 3844ea8d-a054-4605-8f8c-a49aaf135c5c
         config: {}
@@ -152,18 +138,19 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: e6300d7b-a14f-4765-89e4-a195cddfe4ec
+          columnCounter: ad3dbb93-7cec-4763-ac2e-959ead2ba742
           stepCounter: 3844ea8d-a054-4605-8f8c-a49aaf135c5c
         config: {}
-        dataType: VARBINARY(8000)
+        dataType: DECIMAL(36)
         defaultValue: ""
         description: ""
-        hashDetails:
-          hashAlgorithm: SHA1
-        hashedColumns: []
-        name: GH
+        name: O_ORDERKEY
         nullable: true
-        sourceColumnReferences: []
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a2bd7e10-1f29-41a0-aa82-b0f4ff8fa651
+                stepCounter: 46f75082-1971-4ec6-8ede-798b52f0663d
+            transform: ""
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
