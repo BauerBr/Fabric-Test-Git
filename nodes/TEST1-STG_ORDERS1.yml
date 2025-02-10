@@ -144,7 +144,7 @@ operation:
         dataType: DECIMAL(36)
         defaultValue: ""
         description: ""
-        name: O_ORDERKEY
+        name: O_ORDERKEY_TEMP
         nullable: true
         sourceColumnReferences:
           - columnReferences:
