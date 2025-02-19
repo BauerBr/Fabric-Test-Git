@@ -3,7 +3,6 @@ id: cd79335f-6dfb-45ef-b3de-198f8a6a5718
 name: CUSTOMER
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: ""
   locationName: TEST
@@ -145,12 +144,9 @@ operation:
           - columnReferences: []
             transform: ""
         transform: ""
-    join:
-      joinCondition: FROM {{ ref('TEST', 'CUSTOMER') }}
   name: CUSTOMER
   schema: ""
   sqlType: Source
-  table: CUSTOMER
   type: sourceInput
   version: 1
 type: Node
