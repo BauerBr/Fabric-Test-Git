@@ -28,7 +28,7 @@ operation:
         dataType: ""
         defaultValue: ""
         description: ""
-        name: bye
+        name: hi
         nullable: true
         sourceColumnReferences:
           - columnReferences:
