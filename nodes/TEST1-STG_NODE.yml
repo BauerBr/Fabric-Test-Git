@@ -28,7 +28,7 @@ operation:
         dataType: ""
         defaultValue: ""
         description: ""
-        name: test
+        name: asdsadsatest
         nullable: true
         sourceColumnReferences:
           - columnReferences:
