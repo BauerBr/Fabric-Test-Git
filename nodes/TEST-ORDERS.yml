@@ -3,7 +3,6 @@ id: 46f75082-1971-4ec6-8ede-798b52f0663d
 name: ORDERS
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: ""
   locationName: TEST
@@ -162,12 +161,9 @@ operation:
           - columnReferences: []
             transform: ""
         transform: ""
-    join:
-      joinCondition: FROM {{ ref('TEST', 'ORDERS') }}
   name: ORDERS
   schema: ""
   sqlType: Source
-  table: ORDERS
   type: sourceInput
   version: 1
 type: Node
